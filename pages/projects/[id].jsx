@@ -102,13 +102,18 @@ function ProjectSingle(props) {
               {props.project.ProjectInfo.Technologies[0].technologies_summary}
             </p>
             <div className="my-3 flex flex-wrap -m-1">
-              {props.project.ProjectInfo.Technologies[0].techs.map((tech) => {
-                return (
-                  <span class="m-1 flex flex-wrap justify-between items-center text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded px-4 py-2 font-bold leading-loose cursor-pointer dark:text-gray-300">
-                    {tech}
-                  </span>
-                );
-              })}
+              {props.project.ProjectInfo.Technologies[0].techs.map(
+                (tech, index) => {
+                  return (
+                    <span
+                      key={index}
+                      class="m-1 flex flex-wrap justify-between items-center text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded px-4 py-2 font-bold leading-loose cursor-pointer dark:text-gray-300"
+                    >
+                      {tech}
+                    </span>
+                  );
+                }
+              )}
             </div>
           </div>
 
