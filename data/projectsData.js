@@ -12,7 +12,8 @@ export const projectsData = [
     id: 1,
     title: "Job Prospect AI",
     url: "https://jobprospect.ai",
-    category: "Web Application - Solo Founder",
+    category: "Web Application - Solo",
+    statuses: ["Offline", "Archived"],
     img: "/images/JobProspectAI-MainPage.png",
     ProjectHeader: {
       title: "Job Prospect AI",
@@ -117,6 +118,7 @@ export const projectsData = [
     title: "Posture-Controlled Robotic Arm",
     url: "https://github.com/edubu/LightBot",
     category: "EECS 467: Autonomous Robotics - Group Project",
+    statuses: ["Offline", "Completed"],
     img: "/images/PostureControlledRoboticArm.png",
     ProjectHeader: {
       title: "Posture-Controlled Robotic Arm",
@@ -156,7 +158,7 @@ export const projectsData = [
         {
           id: uuidv4(),
           title: "Syllabus",
-          details: "https://shorturl.at/dJSY6",
+          details: "https://shorturl.at/hvyR9",
         },
       ],
       ObjectivesHeading: "TLDR",
@@ -189,6 +191,95 @@ export const projectsData = [
           detailHeader: "Architecture",
           details:
             "The Poppy Project was our interface to sending remote commands to the robotic arm. We had to change configuration files to let this software know what motors it had to give use control of. The posture recogntion was developed using OpenCV and MediaPipe. The most difficult part of this was merging the inputs from both cameras to get a better estimation of the users pose. After we obtained joint positions, the motor updates were calculated and streamed to the Raspberry Pi so that the robotic arm would move accordingly. In addition to pose recognition, we had to use another model to detect whether the fist was closed or not. The fist would control a binary(on or off) end effector. In our case a gripper/light.",
+        },
+      ],
+    },
+  },
+  {
+    id: 3,
+    title: "Visual Vibes",
+    url: "https://www.visualvibes.life",
+    category: "Web Application - Hackathon",
+    statuses: ["Online", "Completed"],
+    img: "/images/VisualVibesMerged.png",
+    ProjectHeader: {
+      title: "Visual Vibes",
+      publishDate: "Dec 17, 2023",
+      tags: "Fullstack, UX/UI, AI",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Visual Vibes Main Page",
+        img: "/images/VisualVibesMainWFloaters.png",
+      },
+      {
+        id: uuidv4(),
+        title: "Visual Vibes Collection Page",
+        img: "/images/VisualVibesCollection.png",
+      },
+      {
+        id: uuidv4(),
+        title: "Visual Vibes Make Vibes Page",
+        img: "/images/VisualVibesMakeVibes.png",
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: "About Project",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: "Hackathon",
+          details: "Supabase Launch Week X",
+        },
+        {
+          id: uuidv4(),
+          title: "Team Members",
+          details: "Elliot Dubuque, Luca Bommarito",
+        },
+        {
+          id: uuidv4(),
+          title: "Website",
+          details: "https://www.visualvibes.life",
+        },
+        {
+          id: uuidv4(),
+          title: "Github",
+          details: "https://github.com/Visual-Vibes/visual-vibes",
+        },
+      ],
+      ObjectivesHeading: "",
+      ObjectivesDetails: "",
+      Technologies: [
+        {
+          title: "Tools & Technologies",
+          technologies_summary: "",
+          techs: [
+            "NextJS",
+            "React",
+            "TypeScript",
+            "TailwindCSS",
+            "Supabase",
+            "AWS Amplify",
+            "GPT-3.5",
+            "GPT-Vision",
+            "DALL-E-3",
+          ],
+        },
+      ],
+      ProjectDetailsHeading: "Summary",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          detailHeader: "Product Description",
+          details:
+            "Visual Vibes is a fun web application to bring animals and objects to life. The way it works is simple. \n\n 1.) Upload a picture of a distinct subject.\n 2.) Enter any OpenAI key\n 3.) Click 'Make Vibes'\n\n Our image generation process will identify the main subject and depict them in multiple 'Vibes' including them in the Morning, Eating Lunch, Sleeping, and more. The application is meant to bring your furry or inanimate friends and show them with human-like characteristics such as working a normal job. \n\n Check out the gallery to see some hilariously goofy examples.\n",
+        },
+        {
+          id: uuidv4(),
+          detailHeader: "Hackathon Rules",
+          details:
+            "The rules stated that any type of product could be built as long as it utilized supabase technologies. We adhered to these rules by using supabase for our database utilizing their tables and storage buckets.",
         },
       ],
     },
